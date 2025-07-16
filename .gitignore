@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env
+*.db
+*.sqlite3
+
+# llama_index storage
+storage/
+persist/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Docker
+*.pid
+*.tar
+*.img
+*.sock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+opt/venv/
+
+# Ollama model cache
+/root/.ollama/
+
+# pycache
+*.pyc
+
+# My Editor Settings
+.idea/
+
+backend/venv
+frontend/node_modules
+
+/backend/vector_store
+/backend/__pycache__
+/backend/vector_store
+/m_asset_poc/venv
+
+/ollama/models
+/ollama/ollama-ipex-llm-2.2.0-ubuntu
