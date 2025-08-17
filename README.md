@@ -1,11 +1,11 @@
-# 🧠 LlamaIndex + Ollama 기반 FastAPI 챗봇
+# LlamaIndex + Ollama 기반 FastAPI 챗봇
 
 이 프로젝트는 **로컬 LLM (Ollama)** 을 활용하여, 사용자의 문서를 기반으로 질의응답할 수 있는 **FastAPI 기반 챗봇 서버**입니다.  
 내부적으로 [LlamaIndex](https://github.com/jerryjliu/llama_index)를 사용하여 문서를 인덱싱하고, [Ollama](https://ollama.com)를 통해 모델 추론을 수행합니다.
 
 ---
 
-## 📦 기술 스택
+## 기술 스택
 
 - **LLM 서버**: [Ollama](https://ollama.com)
 - **벡터 인덱싱**: LlamaIndex (`VectorStoreIndex`)
@@ -15,7 +15,7 @@
 
 ---
 
-## 🧱 프로젝트 구조
+## 프로젝트 구조
 
 ```
 .
@@ -34,7 +34,7 @@
 
 ---
 
-## 🚀 실행 방법
+## 실행 방법
 
 ### 1. 사전 준비
 
@@ -73,7 +73,7 @@ curl -X POST http://localhost:8000/chat/ \
 
 ---
 
-## 🧠 LLM 모델 설정
+## LLM 모델 설정
 
 - 사용 모델은 기본적으로 `mistral` (또는 `llama3`, `phi`, `gemma` 등)
 - `app/llm_config.py` 또는 `.env`에서 변경 가능
@@ -81,14 +81,14 @@ curl -X POST http://localhost:8000/chat/ \
 
 ---
 
-## 📁 문서 인덱싱
+## 문서 인덱싱
 
 - `documents/` 폴더에 `.txt`, `.md` 등 문서를 넣으면 자동 인덱싱됩니다.
 - llama_index가 처음 실행 시 `storage/` 폴더에 벡터 저장
 
 ---
 
-## ✅ 향후 개선 계획 (TODO)
+## 향후 개선 계획 (TODO)
 
 - [ ] 사용자별 세션 대화 저장
 - [ ] OpenAPI 문서 UI 개선
